@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bitcoin Clicker</title>
+		<script src="script.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>BitClicker</h1>
+		<p>Click to mine some bitcoins</p>
+
+		<div id="counterClkr">
+			<div>
+				<img
+					src="/assets/Bitcoin logo.png"
+					alt="Bitcoin Logo"
+					onclick="clickBtc()"
+				/>
+			</div>
+			<div>
+				<strong><p id="counter">1</p></strong>
+			</div>
+		</div>
+		<div id="atributes">
+			<p>BTC/sec:</p>
+			<span id="btcSec">1</span>
+		</div>
+
+		<div id="upgrades">
+			<button onclick="addBtc()" id="addBtc">
+				+1 btc/sec <br />
+				-10 btc
+			</button>
+		</div>
+	</body>
+</html>
